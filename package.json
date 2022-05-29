@@ -1,0 +1,14 @@
+{
+  "name": "ind-batch-file-maker",
+  "version": "1.0.0",
+  "description": "Outputs batch files with IND letters for plotting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Asiesjhot Singh Chandowk",
+  "license": "ISC",
+  "dependencies": {
+    "shelljs": "^0.8.5"
+  }
+}
