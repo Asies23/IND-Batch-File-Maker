@@ -9,6 +9,7 @@
   "author": "Asiesjhot Singh Chandowk",
   "license": "ISC",
   "dependencies": {
+    "readline-sync": "^1.4.10",
     "shelljs": "^0.8.5"
   }
 }
