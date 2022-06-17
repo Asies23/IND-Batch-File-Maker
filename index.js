@@ -151,7 +151,7 @@ for (let i = 0; i < chunkedAlphaNumChar.length; i++) {
         actionList += `selection-ungroup;`;
       }
       actionList += `select-clear;select-all:no-groups;select-clear;select-by-id:${chr};transform-translate:${
-        1100 - setWidth(chr)
+        1150 - setWidth(chr)
       },${height};select-clear;select-all:no-groups;object-align:vcenter;object-distribute:hgap;selection-group;`;
     }
   }
