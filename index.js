@@ -161,7 +161,7 @@ for (let i = 0; i < chunkedAlphaNumChar.length; i++) {
 actionList += `select-all;fit-canvas-to-selection;`;
 console.log(actionList);
 
-let command = `inkscape IndLetters4WheelerTrial.svg -g --batch-process --actions="${actionList}" --export-filename=./NP/${process.argv[2]}.svg`;
+let command = `inkscape IndLetters4WheelerTrial.svg -g --batch-process --actions="${actionList}" --export-filename=./NP/${process.argv[2].toUpperCase()}.svg`;
 console.log(command);
 cd("~/Documents/Inkscape/CLI Test/");
 console.log(ls());
