@@ -2,13 +2,10 @@ const setWidth = require("./setWidth");
 
 let width = 0;
 
-let chunkedObj = [{}];
-let chunkedObjIndex = 0;
-
 let chunkify = (obj) => {
-  console.log(obj);
+  let chunkedObj = [{}];
+  let chunkedObjIndex = 0;
   for (char in obj) {
-    console.log(char);
     let singleCharCount = 0;
     for (let i = obj[char]; i > 0; i--) {
       width += setWidth(char);
@@ -20,7 +17,6 @@ let chunkify = (obj) => {
       } else {
         width = setWidth(char);
         chunkedObj.push({});
-        console.log(chunkedObj);
         chunkedObjIndex++;
         chunkedObj[chunkedObjIndex][char] = 0;
         chunkedObj[chunkedObjIndex][char] += 1;
