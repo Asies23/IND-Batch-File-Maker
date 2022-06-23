@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const { cd } = require("shelljs");
 const setWidth = require("./utils/setWidth");
 const chunkify = require("./utils/chunkify");
@@ -181,7 +183,8 @@ let makeFiles = (i) => {
     console.log(
       "All Files have been processed and are saved in ~/Documents/NP"
     );
-    rl.keyInPause();
+    console.log("");
+    rl.question("Press Enter to Exit ");
   }
 };
 

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Outputs batch files with IND letters for plotting",
   "main": "index.js",
+  "bin": {
+    "ind-batch-file-maker": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
