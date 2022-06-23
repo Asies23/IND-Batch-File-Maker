@@ -169,7 +169,7 @@ let makeFiles = (i) => {
     actionList += `select-all;fit-canvas-to-selection;select-clear;export-filename:NP/${number}.svg;export-do;file-close;file-close;quit-immediate;`;
 
     let command = `inkscape -g --batch-process --actions="${actionList}"`;
-    cd("~/Documents/Inkscape/CLI Test/");
+    cd("~/Documents/");
 
     let cmdExec = process.exec(command, () => {
       if (cmdExec.exitCode == 0) {
